@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>lets learn javascript</h1>
+    <h2>how do we do onclick events and alerts on an anchor</h2>
+    <p>an anchor is essentially a hyperlink</p>
+
+    <a href="https://www.youtube.com" target="_blank"
+        onclick="alert('Warning! you are leaving this page. Would you like to continue?')">Youtube link</a>
+
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity? </h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML = 'nananananana Batman!';
+    document.getElementById('secret').style.display = 'block'"> Reveal!</button>
+
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>How do we change an image with javascript</h2>
+    <img src="images/lightbulb_off.jpg" id="myImage" style="height: 200px;">
+    <button onclick="document.getElementById('myImage').src='images/lightbulb_on.jpg'">Turn On</button>
+    <button onclick="document.getElementById('myImage').src='images/lightbulb_off.jpg'">Turn Off</button>
+
+    <h1>how do we change styles with a button</h1>
+    <p id="alice">hi i am alice</p>
+
+    <button onclick="document.getElementById('alice').style.color='blue';
+    document.getElementById('alice').style.fontSize='30px'">Make blue</button>
+
+    <button
+        onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='5px'">Make
+        red</button>
+
+    <h1>Classwork</h1>
+    <p id="hi" style="border: 2px solid rgb(185, 105, 0); border-radius: 10px;">hi</p>
+    <button onclick="document.getElementById('hi').style.border='5px dashed purple';
+    document.getElementById('hi').style.borderRadius='50px';">make border purple</button>
+    <button onclick="document.getElementById('hi').style.boxShadow='10px 20px 30px grey';">add shadow</button>
+</body>
+
+</html>
